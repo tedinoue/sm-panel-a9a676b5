@@ -112,8 +112,15 @@
         <div>
           <div class="kv"><span class="k">Humidity</span><span class="v" id="out-hum"></span></div>
           <div class="kv"><span class="k">Dewpoint</span><span class="v" id="out-dew"></span></div>
+          <div class="kv" id="out-wind-row" style="display:none"><span class="k">Wind</span><span class="v" id="out-wind"></span></div>
         </div>
       </div>
+    </div>
+
+    <div class="card span" id="card-forecast" style="display:none">
+      <h2>Forecast</h2>
+      <div class="row" style="gap:28px" id="fc-periods"></div>
+      <div class="sub" style="margin-top:6px">National Weather Service · New Hope</div>
     </div>
 
     <div class="card">
@@ -187,6 +194,21 @@
     $("out-temp").innerHTML = n1(o.temp_f) + '<span class="unit">' + F + "</span>";
     $("out-hum").textContent = o.hum_pct == null ? "—" : n0(o.hum_pct) + "%";
     $("out-dew").textContent = n1(o.dew_f) + F;
+    if (o.wind_mph != null) {
+      $("out-wind-row").style.display = "";
+      $("out-wind").textContent = (o.wind_mph === 0 ? "calm" : o.wind_mph + " mph " + (o.wind_dir || ""));
+    }
+
+    const fc = d.forecast;
+    if (fc && fc.length) {
+      $("card-forecast").style.display = "";
+      $("fc-periods").innerHTML = fc.map(p =>
+        '<div><div class="sub" style="margin-top:0">' + p.name + "</div>" +
+        '<div class="big">' + n0(p.temp_f) + '<span class="unit">' + F + "</span></div>" +
+        '<div class="sub">' + (p.short || "") +
+        (p.precip_pct != null && p.precip_pct > 0 ? " · " + p.precip_pct + "% rain" : "") +
+        "</div></div>").join("");
+    }
 
     $("aqi-num").textContent = o.aqi == null ? "—" : n0(o.aqi);
     const ab = aqiBand(o.aqi);
