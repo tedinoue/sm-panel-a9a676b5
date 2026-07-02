@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Solebury Mountain</title>
+<style>
+  :root {
+    --surface:        #f4f4f1;
+    --card:           #fcfcfb;
+    --text-primary:   #0b0b0b;
+    --text-secondary: #52514e;
+    --text-muted:     #7a7973;
+    --border:         #e4e3de;
+    --good:           #0ca30c;
+    --warning:        #fab219;
+    --serious:        #ec835a;
+    --critical:       #d03b3b;
+    --accent:         #2a78d6;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --surface:        #111110;
+      --card:           #1a1a19;
+      --text-primary:   #ffffff;
+      --text-secondary: #c3c2b7;
+      --text-muted:     #8a897f;
+      --border:         #2e2e2b;
+      --accent:         #3987e5;
+    }
+  }
+  * { box-sizing: border-box; margin: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: var(--surface);
+    color: var(--text-primary);
+    padding: 20px;
+    min-height: 100vh;
+  }
+  .wrap { max-width: 780px; margin: 0 auto; }
+  header {
+    display: flex; align-items: baseline; justify-content: space-between;
+    flex-wrap: wrap; gap: 6px; margin-bottom: 18px;
+  }
+  h1 { font-size: 22px; font-weight: 650; letter-spacing: -0.01em; }
+  #updated { font-size: 14px; color: var(--text-secondary); }
+  #updated .stale { font-weight: 600; }
+  #updated .stale.warn { color: var(--warning); }
+  #updated .stale.crit { color: var(--critical); }
+
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 14px; }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 18px 20px;
+  }
+  .card.span { grid-column: 1 / -1; }
+  .card h2 {
+    font-size: 13px; font-weight: 600; text-transform: uppercase;
+    letter-spacing: 0.06em; color: var(--text-muted); margin-bottom: 10px;
+  }
+  .hero {
+    font-size: 64px; font-weight: 600; line-height: 1;
+    letter-spacing: -0.02em;
+  }
+  .hero .unit { font-size: 30px; font-weight: 500; color: var(--text-secondary); }
+  .big { font-size: 34px; font-weight: 600; line-height: 1.1; }
+  .big .unit { font-size: 18px; font-weight: 500; color: var(--text-secondary); }
+  .sub { font-size: 15px; color: var(--text-secondary); margin-top: 8px; }
+  .row { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+  .kv { display: flex; justify-content: space-between; gap: 12px; font-size: 16px; padding: 4px 0; }
+  .kv .k { color: var(--text-secondary); }
+  .kv .v { font-weight: 600; }
+
+  .chip {
+    display: inline-flex; align-items: center; gap: 6px;
+    font-size: 14px; font-weight: 600;
+    padding: 3px 10px; border-radius: 999px;
+    border: 1.5px solid; background: transparent;
+  }
+  .chip .dot { width: 9px; height: 9px; border-radius: 50%; }
+  .chip.good     { border-color: var(--good);     }
+  .chip.warning  { border-color: var(--warning);  }
+  .chip.serious  { border-color: var(--serious);  }
+  .chip.critical { border-color: var(--critical); }
+  .chip.good .dot     { background: var(--good); }
+  .chip.warning .dot  { background: var(--warning); }
+  .chip.serious .dot  { background: var(--serious); }
+  .chip.critical .dot { background: var(--critical); }
+  .chip.neutral { border-color: var(--border); color: var(--text-secondary); }
+  .chip.neutral .dot { background: var(--text-muted); }
+
+  #status { text-align: center; color: var(--text-muted); padding: 40px 0; font-size: 16px; }
+  footer { margin-top: 16px; font-size: 12px; color: var(--text-muted); text-align: center; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Solebury Mountain</h1>
+    <div id="updated"></div>
+  </header>
+  <div id="status">Loading current conditions…</div>
+  <div class="grid" id="grid" style="display:none">
+
+    <div class="card span" id="card-out">
+      <h2>Outdoors</h2>
+      <div class="row" style="gap:24px; align-items:flex-end">
+        <div class="hero" id="out-temp"></div>
+        <div>
+          <div class="kv"><span class="k">Humidity</span><span class="v" id="out-hum"></span></div>
+          <div class="kv"><span class="k">Dewpoint</span><span class="v" id="out-dew"></span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Air quality</h2>
+      <div class="big" id="aqi-num"></div>
+      <div class="sub row" id="aqi-chip"></div>
+      <div class="sub" id="aqi-pm"></div>
+    </div>
+
+    <div class="card">
+      <h2>Rain</h2>
+      <div class="big" id="rain-today"></div>
+      <div class="sub" id="rain-rate"></div>
+    </div>
+
+    <div class="card">
+      <h2>Inside</h2>
+      <div class="big" id="in-temp"></div>
+      <div class="sub" id="in-target"></div>
+      <div class="sub row" id="in-comfort"></div>
+    </div>
+
+    <div class="card">
+      <h2>Heating &amp; cooling</h2>
+      <div class="kv"><span class="k">Mini-split</span><span class="v" id="hv-gree"></span></div>
+      <div class="kv"><span class="k">Central</span><span class="v" id="hv-central"></span></div>
+      <div class="sub" id="hv-note"></div>
+    </div>
+
+  </div>
+  <footer>Updates every 12 minutes · page refreshes itself</footer>
+</div>
+
+<script>
+(function () {
+  const $ = id => document.getElementById(id);
+  const F = "°F";
+
+  function aqiBand(a) {
+    if (a == null) return null;
+    if (a <= 50)  return { cls: "good",     word: "Good" };
+    if (a <= 100) return { cls: "warning",  word: "Moderate" };
+    if (a <= 150) return { cls: "serious",  word: "Unhealthy for sensitive groups" };
+    return { cls: "critical", word: "Unhealthy" };
+  }
+  function comfortChip(band) {
+    const map = { dry:         { cls: "good",    word: "Dry & comfortable" },
+                  comfortable: { cls: "good",    word: "Comfortable" },
+                  sticky:      { cls: "warning", word: "A little sticky" },
+                  muggy:       { cls: "serious", word: "Muggy" } };
+    return map[band] || null;
+  }
+  function chip(c, word) {
+    return '<span class="chip ' + c + '"><span class="dot"></span>' + word + "</span>";
+  }
+  const n1 = v => (v == null ? "—" : Number(v).toFixed(1).replace(/\.0$/, ""));
+  const n0 = v => (v == null ? "—" : Math.round(v));
+
+  function staleness(epoch) {
+    const min = Math.round((Date.now() / 1000 - epoch) / 60);
+    const t = new Date(epoch * 1000).toLocaleTimeString([], { hour: "numeric", minute: "2-digit" });
+    if (min <= 30) return "as of " + t;
+    if (min <= 120) return 'as of ' + t + ' — <span class="stale warn">⚠ ' + min + " min old</span>";
+    return 'as of ' + t + ' — <span class="stale crit">⚠ stale (' + Math.round(min / 60) + "h old)</span>";
+  }
+
+  function render(d) {
+    $("updated").innerHTML = staleness(d.updated_epoch);
+    const o = d.outdoor || {}, r = d.rain || {}, i = d.indoor || {}, h = d.hvac || {};
+
+    $("out-temp").innerHTML = n1(o.temp_f) + '<span class="unit">' + F + "</span>";
+    $("out-hum").textContent = o.hum_pct == null ? "—" : n0(o.hum_pct) + "%";
+    $("out-dew").textContent = n1(o.dew_f) + F;
+
+    $("aqi-num").textContent = o.aqi == null ? "—" : n0(o.aqi);
+    const ab = aqiBand(o.aqi);
+    $("aqi-chip").innerHTML = ab ? chip(ab.cls, ab.word) : "";
+    $("aqi-pm").textContent = o.pm25 == null ? "" : "PM2.5 " + n1(o.pm25) + " µg/m³";
+
+    const rt = r.today_in;
+    $("rain-today").innerHTML = (rt == null ? "—" : Number(rt).toFixed(2)) + '<span class="unit"> in today</span>';
+    $("rain-rate").innerHTML = (r.rate_in_hr > 0)
+      ? chip("warning", "Raining now — " + Number(r.rate_in_hr).toFixed(2) + " in/hr")
+      : "Not raining";
+
+    $("in-temp").innerHTML = n1(i.lr_temp_f) + '<span class="unit">' + F + "</span>";
+    $("in-target").textContent = (i.target_f != null ? "target " + n1(i.target_f) + F + " · " : "")
+      + (i.hum_pct != null ? "humidity " + n0(i.hum_pct) + "%" : "");
+    const cc = comfortChip(i.comfort_band);
+    $("in-comfort").innerHTML = (cc ? chip(cc.cls, cc.word) : "")
+      + (i.dehumidifying ? " " + chip("neutral", "Drying the air") : "");
+
+    $("hv-gree").textContent = h.gree_mode === "off" ? "off"
+      : h.gree_mode === "unreachable" ? "—"
+      : (h.gree_mode || "—") + (h.gree_set_f ? " · set " + n0(h.gree_set_f) + F : "")
+        + (h.gree_fan ? " · fan " + h.gree_fan : "");
+    $("hv-central").textContent = (h.central_mode || "—")
+      + (h.central_cool_sp_f != null ? " · cool to " + n1(h.central_cool_sp_f) + F : "");
+    $("hv-note").textContent =
+      (h.gree_mode === "cool" && h.central_mode === "cool") ? "Both systems cooling"
+      : (h.gree_mode === "cool" || h.central_mode === "cool") ? "Cooling" : "";
+
+    $("status").style.display = "none";
+    $("grid").style.display = "grid";
+  }
+
+  async function load() {
+    try {
+      const res = await fetch("conditions.json?t=" + Date.now(), { cache: "no-store" });
+      if (!res.ok) throw new Error("HTTP " + res.status);
+      render(await res.json());
+    } catch (e) {
+      if ($("grid").style.display === "none")
+        $("status").textContent = "Waiting for the first data update… (" + e.message + ")";
+      else
+        $("updated").innerHTML = '<span class="stale warn">⚠ couldn\'t refresh</span>';
+    }
+  }
+
+  load();
+  setInterval(load, 3 * 60 * 1000);
+  document.addEventListener("visibilitychange", () => { if (!document.hidden) load(); });
+})();
+</script>
+</body>
+</html>
