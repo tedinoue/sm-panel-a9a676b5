@@ -6,8 +6,26 @@
   "hum_pct": 35,
   "dew_f": 68.0,
   "aqi": 52,
-  "pm25": 12.61
+  "pm25": 12.61,
+  "wind_mph": 7,
+  "wind_dir": "SW"
  },
+ "forecast": [
+  {
+   "name": "This Afternoon",
+   "temp_f": 102,
+   "is_day": true,
+   "precip_pct": 0,
+   "short": "Sunny"
+  },
+  {
+   "name": "Tonight",
+   "temp_f": 79,
+   "is_day": false,
+   "precip_pct": 0,
+   "short": "Mostly Clear"
+  }
+ ],
  "rain": {
   "rate_in_hr": 0.0,
   "today_in": 0.0
