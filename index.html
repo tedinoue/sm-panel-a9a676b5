@@ -242,9 +242,12 @@
     $("grid").style.display = "grid";
   }
 
+  // Data lives on the repo's `data` branch (fetched via raw.githubusercontent,
+  // CORS-open) so 12-minute data updates never trigger a Pages build/deploy.
+  const DATA_URL = "https://raw.githubusercontent.com/tedinoue/sm-panel-a9a676b5/data/conditions.json";
   async function load() {
     try {
-      const res = await fetch("conditions.json?t=" + Date.now(), { cache: "no-store" });
+      const res = await fetch(DATA_URL + "?t=" + Date.now(), { cache: "no-store" });
       if (!res.ok) throw new Error("HTTP " + res.status);
       render(await res.json());
     } catch (e) {
