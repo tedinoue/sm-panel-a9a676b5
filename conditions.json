@@ -1,12 +1,12 @@
 {
- "updated_epoch": 1783071749,
- "updated": "2026-07-03 05:42:29",
+ "updated_epoch": 1783072475,
+ "updated": "2026-07-03 05:54:35",
  "outdoor": {
   "temp_f": 78,
   "hum_pct": 70,
   "dew_f": 67.6,
-  "aqi": 62,
-  "pm25": 17.43,
+  "aqi": 60,
+  "pm25": 16.48,
   "wind_mph": 0,
   "wind_dir": "N"
  },
@@ -31,19 +31,19 @@
   "today_in": 0.0
  },
  "indoor": {
-  "lr_temp_f": 67.9,
+  "lr_temp_f": 67.8,
   "target_f": 70.0,
-  "hum_pct": 64,
-  "dew_f": 54.6,
-  "comfort_band": "dry",
-  "dehumidifying": false
+  "hum_pct": 70,
+  "dew_f": 57.4,
+  "comfort_band": "comfortable",
+  "dehumidifying": true
  },
  "hvac": {
   "gree_mode": "cool",
-  "gree_set_f": 62,
+  "gree_set_f": 63,
   "gree_fan": "high",
   "central_mode": "cool",
-  "central_cool_sp_f": 68.0,
+  "central_cool_sp_f": 69.0,
   "central_heat_sp_f": 70.0
  }
 }
