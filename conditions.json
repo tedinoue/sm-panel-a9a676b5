@@ -1,12 +1,12 @@
 {
- "updated_epoch": 1783127483,
- "updated": "2026-07-03 21:11:23",
+ "updated_epoch": 1783128208,
+ "updated": "2026-07-03 21:23:28",
  "outdoor": {
   "temp_f": 73,
-  "hum_pct": 72,
-  "dew_f": 63.6,
-  "aqi": 18,
-  "pm25": 4.55,
+  "hum_pct": 73,
+  "dew_f": 63.7,
+  "aqi": 21,
+  "pm25": 5.05,
   "wind_mph": 6,
   "wind_dir": "NE"
  },
@@ -15,8 +15,8 @@
    "name": "Tonight",
    "temp_f": 76,
    "is_day": false,
-   "precip_pct": 27,
-   "short": "Chance Showers And Thunderstorms then Partly Cloudy"
+   "precip_pct": 20,
+   "short": "Slight Chance Showers And Thunderstorms then Partly Cloudy"
   },
   {
    "name": "Independence Day",
@@ -31,10 +31,10 @@
   "today_in": 0.02
  },
  "indoor": {
-  "lr_temp_f": 70.0,
+  "lr_temp_f": 70.1,
   "target_f": 70.0,
-  "hum_pct": 64,
-  "dew_f": 56.0,
+  "hum_pct": 63,
+  "dew_f": 55.6,
   "comfort_band": "comfortable",
   "dehumidifying": false
  },
