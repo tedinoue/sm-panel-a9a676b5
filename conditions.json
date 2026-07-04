@@ -1,29 +1,29 @@
 {
- "updated_epoch": 1783158717,
- "updated": "2026-07-04 05:51:57",
+ "updated_epoch": 1783159442,
+ "updated": "2026-07-04 06:04:02",
  "outdoor": {
   "temp_f": 74,
-  "hum_pct": 73,
-  "dew_f": 64.6,
-  "aqi": 44,
-  "pm25": 10.5,
+  "hum_pct": 74,
+  "dew_f": 65.2,
+  "aqi": 46,
+  "pm25": 10.93,
   "wind_mph": 0,
   "wind_dir": "N"
  },
  "forecast": [
-  {
-   "name": "Overnight",
-   "temp_f": 71,
-   "is_day": false,
-   "precip_pct": 3,
-   "short": "Mostly Clear"
-  },
   {
    "name": "Independence Day",
    "temp_f": 98,
    "is_day": true,
    "precip_pct": 42,
    "short": "Mostly Sunny then Chance Showers And Thunderstorms"
+  },
+  {
+   "name": "Tonight",
+   "temp_f": 72,
+   "is_day": false,
+   "precip_pct": 73,
+   "short": "Chance Showers And Thunderstorms"
   }
  ],
  "rain": {
@@ -31,10 +31,10 @@
   "today_in": 0.0
  },
  "indoor": {
-  "lr_temp_f": 68.3,
+  "lr_temp_f": 68.4,
   "target_f": 70.0,
-  "hum_pct": 62,
-  "dew_f": 56.5,
+  "hum_pct": 63,
+  "dew_f": 56.8,
   "comfort_band": "comfortable",
   "dehumidifying": true
  },
