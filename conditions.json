@@ -1,22 +1,22 @@
 {
- "updated_epoch": 1783231818,
- "updated": "2026-07-05 02:10:18",
+ "updated_epoch": 1783232544,
+ "updated": "2026-07-05 02:22:24",
  "outdoor": {
   "temp_f": 71,
-  "hum_pct": 94,
-  "dew_f": 69.2,
-  "aqi": 50,
-  "pm25": 11.88,
-  "wind_mph": 8,
+  "hum_pct": 93,
+  "dew_f": 68.8,
+  "aqi": 52,
+  "pm25": 12.89,
+  "wind_mph": 3,
   "wind_dir": "NE"
  },
  "forecast": [
   {
-   "name": "Tonight",
+   "name": "Overnight",
    "temp_f": 71,
    "is_day": false,
-   "precip_pct": 70,
-   "short": "Showers And Thunderstorms Likely"
+   "precip_pct": 30,
+   "short": "Chance Rain Showers"
   },
   {
    "name": "Sunday",
@@ -34,7 +34,7 @@
   "lr_temp_f": 69.5,
   "target_f": 70.0,
   "hum_pct": 66,
-  "dew_f": 58.1,
+  "dew_f": 58.0,
   "comfort_band": "comfortable",
   "dehumidifying": true
  },
