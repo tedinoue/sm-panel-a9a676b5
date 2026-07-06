@@ -1,29 +1,29 @@
 {
- "updated_epoch": 1783324890,
- "updated": "2026-07-06 04:01:30",
+ "updated_epoch": 1783325619,
+ "updated": "2026-07-06 04:13:39",
  "outdoor": {
-  "temp_f": 69,
-  "hum_pct": 94,
+  "temp_f": 70,
+  "hum_pct": 91,
   "dew_f": 67.3,
   "aqi": 44,
-  "pm25": 10.54,
-  "wind_mph": 0,
-  "wind_dir": "N"
+  "pm25": 10.73,
+  "wind_mph": null,
+  "wind_dir": null
  },
  "forecast": [
   {
    "name": "Overnight",
    "temp_f": 68,
    "is_day": false,
-   "precip_pct": 89,
-   "short": "Showers And Thunderstorms"
+   "precip_pct": 55,
+   "short": "Showers And Thunderstorms Likely"
   },
   {
    "name": "Monday",
-   "temp_f": 75,
+   "temp_f": 76,
    "is_day": true,
-   "precip_pct": 92,
-   "short": "Chance Showers And Thunderstorms then Showers And Thunderstorms"
+   "precip_pct": 85,
+   "short": "Showers And Thunderstorms"
   }
  ],
  "rain": {
@@ -34,7 +34,7 @@
   "lr_temp_f": 68.2,
   "target_f": 70.0,
   "hum_pct": 64,
-  "dew_f": 55.9,
+  "dew_f": 55.8,
   "comfort_band": "comfortable",
   "dehumidifying": true
  },
