@@ -1,12 +1,12 @@
 {
- "updated_epoch": 1783321986,
- "updated": "2026-07-06 03:13:06",
+ "updated_epoch": 1783322711,
+ "updated": "2026-07-06 03:25:11",
  "outdoor": {
   "temp_f": 69,
   "hum_pct": 94,
   "dew_f": 67.3,
-  "aqi": 40,
-  "pm25": 9.73,
+  "aqi": 42,
+  "pm25": 10.0,
   "wind_mph": 0,
   "wind_dir": "N"
  },
