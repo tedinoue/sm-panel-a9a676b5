@@ -1,13 +1,13 @@
 {
- "updated_epoch": 1783439870,
- "updated": "2026-07-07 11:57:50",
+ "updated_epoch": 1783440595,
+ "updated": "2026-07-07 12:09:55",
  "outdoor": {
-  "temp_f": 68.0,
-  "hum_pct": 82,
+  "temp_f": 69.8,
+  "hum_pct": 77,
   "dew_f": 62.2,
-  "aqi": 14,
-  "pm25": 3.38,
-  "wind_mph": 7,
+  "aqi": 17,
+  "pm25": 4.08,
+  "wind_mph": 8,
   "wind_dir": "NE"
  },
  "forecast": [
@@ -15,8 +15,8 @@
    "name": "Today",
    "temp_f": 76,
    "is_day": true,
-   "precip_pct": 21,
-   "short": "Patchy Fog then Slight Chance Showers And Thunderstorms"
+   "precip_pct": 16,
+   "short": "Mostly Cloudy then Slight Chance Showers And Thunderstorms"
   },
   {
    "name": "Tonight",
@@ -31,7 +31,7 @@
   "today_in": 0.04
  },
  "indoor": {
-  "lr_temp_f": 68.7,
+  "lr_temp_f": 68.9,
   "target_f": 70.0,
   "hum_pct": 68,
   "dew_f": 56.4,
