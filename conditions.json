@@ -1,14 +1,14 @@
 {
- "updated_epoch": 1783513607,
- "updated": "2026-07-08 08:26:47",
+ "updated_epoch": 1783514333,
+ "updated": "2026-07-08 08:38:53",
  "outdoor": {
   "temp_f": 68.0,
   "hum_pct": 78,
   "dew_f": 61.0,
   "aqi": 20,
-  "pm25": 4.62,
-  "wind_mph": 5,
-  "wind_dir": "NE"
+  "pm25": 4.87,
+  "wind_mph": 3,
+  "wind_dir": "E"
  },
  "forecast": [
   {
@@ -16,7 +16,7 @@
    "temp_f": 84,
    "is_day": true,
    "precip_pct": 0,
-   "short": "Patchy Fog then Mostly Sunny"
+   "short": "Mostly Sunny"
   },
   {
    "name": "Tonight",
@@ -34,7 +34,7 @@
   "lr_temp_f": 68.7,
   "target_f": 70.0,
   "hum_pct": 70,
-  "dew_f": 58.0,
+  "dew_f": 57.9,
   "comfort_band": "comfortable",
   "dehumidifying": true
  },
