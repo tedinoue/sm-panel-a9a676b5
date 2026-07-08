@@ -1,12 +1,12 @@
 {
- "updated_epoch": 1783509248,
- "updated": "2026-07-08 07:14:08",
+ "updated_epoch": 1783509976,
+ "updated": "2026-07-08 07:26:16",
  "outdoor": {
   "temp_f": 63,
   "hum_pct": 94,
   "dew_f": 61.1,
   "aqi": 16,
-  "pm25": 3.68,
+  "pm25": 3.94,
   "wind_mph": 3,
   "wind_dir": "NE"
  },
@@ -31,10 +31,10 @@
   "today_in": 0.0
  },
  "indoor": {
-  "lr_temp_f": 68.3,
+  "lr_temp_f": 68.4,
   "target_f": 70.0,
   "hum_pct": 70,
-  "dew_f": 57.6,
+  "dew_f": 57.9,
   "comfort_band": "comfortable",
   "dehumidifying": true
  },
