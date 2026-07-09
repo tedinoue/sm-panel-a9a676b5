@@ -1,14 +1,14 @@
 {
- "updated_epoch": 1783563587,
- "updated": "2026-07-08 22:19:47",
+ "updated_epoch": 1783564315,
+ "updated": "2026-07-08 22:31:55",
  "outdoor": {
   "temp_f": 73,
-  "hum_pct": 73,
-  "dew_f": 63.7,
-  "aqi": 14,
-  "pm25": 3.34,
-  "wind_mph": 7,
-  "wind_dir": "SW"
+  "hum_pct": 74,
+  "dew_f": 64.2,
+  "aqi": 20,
+  "pm25": 4.82,
+  "wind_mph": 5,
+  "wind_dir": "S"
  },
  "forecast": [
   {
@@ -16,7 +16,7 @@
    "temp_f": 67,
    "is_day": false,
    "precip_pct": 0,
-   "short": "Mostly Clear then Patchy Fog"
+   "short": "Partly Cloudy then Patchy Fog"
   },
   {
    "name": "Thursday",
@@ -34,7 +34,7 @@
   "lr_temp_f": 69.2,
   "target_f": 70.0,
   "hum_pct": 68,
-  "dew_f": 57.2,
+  "dew_f": 57.4,
   "comfort_band": "comfortable",
   "dehumidifying": true
  },
