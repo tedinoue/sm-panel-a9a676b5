@@ -114,6 +114,10 @@
           <div class="kv"><span class="k">Dewpoint</span><span class="v" id="out-dew"></span></div>
           <div class="kv" id="out-wind-row" style="display:none"><span class="k">Wind</span><span class="v" id="out-wind"></span></div>
         </div>
+        <div id="pool-block" style="display:none; margin-left:auto; text-align:right">
+          <div class="big" id="pool-temp"></div>
+          <div class="sub" style="margin-top:2px">Pool</div>
+        </div>
       </div>
     </div>
 
@@ -197,6 +201,14 @@
     if (o.wind_mph != null) {
       $("out-wind-row").style.display = "";
       $("out-wind").textContent = (o.wind_mph === 0 ? "calm" : o.wind_mph + " mph " + (o.wind_dir || ""));
+    }
+
+    const p = d.pool || {};
+    if (p.temp_f != null) {
+      $("pool-block").style.display = "";
+      $("pool-temp").innerHTML = n1(p.temp_f) + '<span class="unit">' + F + "</span>";
+    } else {
+      $("pool-block").style.display = "none";
     }
 
     const fc = d.forecast;
