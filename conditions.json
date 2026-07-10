@@ -1,22 +1,22 @@
 {
- "updated_epoch": 1783668148,
- "updated": "2026-07-10 03:22:28",
+ "updated_epoch": 1783668876,
+ "updated": "2026-07-10 03:34:36",
  "outdoor": {
   "temp_f": 71,
   "hum_pct": 94,
   "dew_f": 69.2,
   "aqi": 68,
-  "pm25": 19.98,
+  "pm25": 20.25,
   "wind_mph": 3,
   "wind_dir": "W"
  },
  "forecast": [
   {
-   "name": "Overnight",
+   "name": "Tonight",
    "temp_f": 70,
    "is_day": false,
-   "precip_pct": 3,
-   "short": "Patchy Fog"
+   "precip_pct": 24,
+   "short": "Slight Chance Rain Showers then Patchy Fog"
   },
   {
    "name": "Friday",
