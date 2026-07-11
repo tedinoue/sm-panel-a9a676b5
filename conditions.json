@@ -11,8 +11,8 @@
   "wind_dir": "W"
  },
  "pool": {
-  "temp_f": 81.1,
-  "epoch": 1783738200
+  "temp_f": 81.0,
+  "epoch": 1783738920
  },
  "forecast": [
   {
