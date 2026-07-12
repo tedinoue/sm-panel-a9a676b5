@@ -1,18 +1,18 @@
 {
- "updated_epoch": 1783858727,
- "updated": "2026-07-12 08:18:47",
+ "updated_epoch": 1783859455,
+ "updated": "2026-07-12 08:30:55",
  "outdoor": {
   "temp_f": 70.7,
-  "hum_pct": 73,
-  "dew_f": 61.6,
-  "aqi": 64,
-  "pm25": 18.29,
+  "hum_pct": 69,
+  "dew_f": 60.2,
+  "aqi": 65,
+  "pm25": 18.45,
   "wind_mph": null,
   "wind_dir": null
  },
  "pool": {
-  "temp_f": 70.7,
-  "epoch": 1783858680
+  "temp_f": 71.4,
+  "epoch": 1783859400
  },
  "forecast": [
   {
