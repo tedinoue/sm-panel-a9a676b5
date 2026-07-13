@@ -1,18 +1,18 @@
 {
- "updated_epoch": 1783973175,
- "updated": "2026-07-13 16:06:15",
+ "updated_epoch": 1783973914,
+ "updated": "2026-07-13 16:18:34",
  "outdoor": {
-  "temp_f": 80.6,
-  "hum_pct": 52,
-  "dew_f": 61.2,
-  "aqi": 58,
-  "pm25": 15.23,
-  "wind_mph": 0,
-  "wind_dir": "N"
+  "temp_f": 84.2,
+  "hum_pct": 48,
+  "dew_f": 62.1,
+  "aqi": 60,
+  "pm25": 16.3,
+  "wind_mph": 5,
+  "wind_dir": "W"
  },
  "pool": {
   "temp_f": 84.0,
-  "epoch": 1783973100
+  "epoch": 1783973880
  },
  "forecast": [
   {
@@ -35,11 +35,11 @@
   "today_in": 0.0
  },
  "indoor": {
-  "lr_temp_f": 70.2,
+  "lr_temp_f": 69.8,
   "target_f": 69.0,
-  "hum_pct": 68,
-  "dew_f": 55.6,
-  "comfort_band": "comfortable",
+  "hum_pct": 66,
+  "dew_f": 54.3,
+  "comfort_band": "dry",
   "dehumidifying": false
  },
  "hvac": {
