@@ -1,18 +1,18 @@
 {
- "updated_epoch": 1783996641,
- "updated": "2026-07-13 22:37:21",
+ "updated_epoch": 1783997369,
+ "updated": "2026-07-13 22:49:29",
  "outdoor": {
   "temp_f": 71,
-  "hum_pct": 66,
-  "dew_f": 58.9,
-  "aqi": 55,
-  "pm25": 13.83,
-  "wind_mph": 3,
+  "hum_pct": 65,
+  "dew_f": 58.6,
+  "aqi": 51,
+  "pm25": 12.33,
+  "wind_mph": 5,
   "wind_dir": "S"
  },
  "pool": {
   "temp_f": 83.3,
-  "epoch": 1783996620
+  "epoch": 1783997340
  },
  "forecast": [
   {
@@ -38,14 +38,14 @@
   "lr_temp_f": 68.5,
   "target_f": 70.0,
   "hum_pct": 66,
-  "dew_f": 55.6,
+  "dew_f": 55.7,
   "comfort_band": "comfortable",
   "dehumidifying": false
  },
  "hvac": {
   "cool_by": "gree",
   "gree_mode": "cool",
-  "gree_set_f": 69,
+  "gree_set_f": 70,
   "gree_fan": "high",
   "central_mode": "off",
   "central_cool_sp_f": 72.0,
