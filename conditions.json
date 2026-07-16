@@ -1,26 +1,26 @@
 {
- "updated_epoch": 1784162279,
- "updated": "2026-07-15 20:37:59",
+ "updated_epoch": 1784163008,
+ "updated": "2026-07-15 20:50:08",
  "outdoor": {
-  "temp_f": 79,
-  "hum_pct": 67,
-  "dew_f": 67.0,
+  "temp_f": 78,
+  "hum_pct": 70,
+  "dew_f": 67.6,
   "aqi": 162,
-  "pm25": 76.38,
+  "pm25": 76.72,
   "wind_mph": 6,
   "wind_dir": "N"
  },
  "pool": {
   "temp_f": 86.0,
-  "epoch": 1784162220
+  "epoch": 1784163000
  },
  "forecast": [
   {
    "name": "Tonight",
    "temp_f": 72,
    "is_day": false,
-   "precip_pct": 16,
-   "short": "Smoke"
+   "precip_pct": 20,
+   "short": "Slight Chance Showers And Thunderstorms then Smoke"
   },
   {
    "name": "Thursday",
@@ -35,7 +35,7 @@
   "today_in": 0.0
  },
  "indoor": {
-  "lr_temp_f": 70.9,
+  "lr_temp_f": 71.1,
   "target_f": 71.0,
   "hum_pct": 67,
   "dew_f": 56.3,
