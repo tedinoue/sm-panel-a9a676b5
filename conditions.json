@@ -1,19 +1,16 @@
 {
- "updated_epoch": 1784279358,
- "updated": "2026-07-17 05:09:18",
+ "updated_epoch": 1784280085,
+ "updated": "2026-07-17 05:21:25",
  "outdoor": {
-  "temp_f": 68,
-  "hum_pct": 63,
+  "temp_f": 69,
+  "hum_pct": 61,
   "dew_f": 54.9,
   "aqi": 176,
-  "pm25": 103.41,
+  "pm25": 103.52,
   "wind_mph": 0,
   "wind_dir": "N"
  },
- "pool": {
-  "temp_f": 72.5,
-  "epoch": 1784279280
- },
+ "pool": null,
  "forecast": [
   {
    "name": "Overnight",
