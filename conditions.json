@@ -1,33 +1,33 @@
 {
- "updated_epoch": 1784325948,
- "updated": "2026-07-17 18:05:48",
+ "updated_epoch": 1784326683,
+ "updated": "2026-07-17 18:18:03",
  "outdoor": {
   "temp_f": 84.2,
-  "hum_pct": 37,
-  "dew_f": 55.2,
-  "aqi": 116,
-  "pm25": 41.21,
-  "wind_mph": 0,
-  "wind_dir": "N"
+  "hum_pct": 38,
+  "dew_f": 56.2,
+  "aqi": 114,
+  "pm25": 40.64,
+  "wind_mph": 3,
+  "wind_dir": "W"
  },
  "pool": {
-  "temp_f": 86.2,
-  "epoch": 1784325900
+  "temp_f": 86.0,
+  "epoch": 1784326620
  },
  "forecast": [
-  {
-   "name": "This Afternoon",
-   "temp_f": 87,
-   "is_day": true,
-   "precip_pct": 0,
-   "short": "Patchy Smoke"
-  },
   {
    "name": "Tonight",
    "temp_f": 68,
    "is_day": false,
    "precip_pct": 3,
    "short": "Smoke"
+  },
+  {
+   "name": "Saturday",
+   "temp_f": 83,
+   "is_day": true,
+   "precip_pct": 95,
+   "short": "Areas Of Smoke then Patchy Smoke"
   }
  ],
  "rain": {
@@ -35,10 +35,10 @@
   "today_in": 0.0
  },
  "indoor": {
-  "lr_temp_f": 70.8,
+  "lr_temp_f": 70.6,
   "target_f": 70.0,
   "hum_pct": 65,
-  "dew_f": 53.4,
+  "dew_f": 53.0,
   "comfort_band": "dry",
   "dehumidifying": false
  },
