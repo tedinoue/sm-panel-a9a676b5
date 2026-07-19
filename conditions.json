@@ -1,19 +1,16 @@
 {
- "updated_epoch": 1784441312,
- "updated": "2026-07-19 02:08:32",
+ "updated_epoch": 1784442039,
+ "updated": "2026-07-19 02:20:39",
  "outdoor": {
-  "temp_f": 71,
-  "hum_pct": 94,
-  "dew_f": 69.3,
-  "aqi": 50,
-  "pm25": 12.38,
-  "wind_mph": 6,
-  "wind_dir": "W"
+  "temp_f": 70,
+  "hum_pct": 92,
+  "dew_f": 67.5,
+  "aqi": 44,
+  "pm25": 10.43,
+  "wind_mph": 8,
+  "wind_dir": "NW"
  },
- "pool": {
-  "temp_f": 82.9,
-  "epoch": 1784441220
- },
+ "pool": null,
  "forecast": [
   {
    "name": "Overnight",
@@ -31,14 +28,14 @@
   }
  ],
  "rain": {
-  "rate_in_hr": 0.02,
+  "rate_in_hr": 0.0,
   "today_in": 0.04
  },
  "indoor": {
-  "lr_temp_f": 68.9,
+  "lr_temp_f": 69.1,
   "target_f": 70.0,
   "hum_pct": 68,
-  "dew_f": 57.3,
+  "dew_f": 57.2,
   "comfort_band": "comfortable",
   "dehumidifying": true
  },
