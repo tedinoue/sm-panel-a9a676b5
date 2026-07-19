@@ -1,18 +1,18 @@
 {
- "updated_epoch": 1784461731,
- "updated": "2026-07-19 07:48:51",
+ "updated_epoch": 1784462459,
+ "updated": "2026-07-19 08:00:59",
  "outdoor": {
   "temp_f": 69.8,
   "hum_pct": 81,
   "dew_f": 63.8,
-  "aqi": 86,
-  "pm25": 28.44,
-  "wind_mph": 5,
-  "wind_dir": "NW"
+  "aqi": 90,
+  "pm25": 30.45,
+  "wind_mph": 3,
+  "wind_dir": "W"
  },
  "pool": {
   "temp_f": 82.0,
-  "epoch": 1784461680
+  "epoch": 1784462400
  },
  "forecast": [
   {
@@ -31,14 +31,14 @@
   }
  ],
  "rain": {
-  "rate_in_hr": 0.02,
+  "rate_in_hr": 0.0,
   "today_in": 0.09
  },
  "indoor": {
-  "lr_temp_f": 68.8,
+  "lr_temp_f": 69.0,
   "target_f": 70.0,
   "hum_pct": 68,
-  "dew_f": 57.0,
+  "dew_f": 57.1,
   "comfort_band": "comfortable",
   "dehumidifying": true
  },
