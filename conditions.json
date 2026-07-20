@@ -7,12 +7,12 @@
   "dew_f": 52.1,
   "aqi": 26,
   "pm25": 6.34,
-  "wind_mph": 6,
+  "wind_mph": 9,
   "wind_dir": "N"
  },
  "pool": {
-  "temp_f": 81.7,
-  "epoch": 1784551500
+  "temp_f": 81.5,
+  "epoch": 1784552220
  },
  "forecast": [
   {
