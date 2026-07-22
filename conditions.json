@@ -1,26 +1,26 @@
 {
- "updated_epoch": 1784682148,
- "updated": "2026-07-21 21:02:28",
+ "updated_epoch": 1784682876,
+ "updated": "2026-07-21 21:14:36",
  "outdoor": {
   "temp_f": 70,
   "hum_pct": 92,
   "dew_f": 67.5,
-  "aqi": 40,
-  "pm25": 9.46,
-  "wind_mph": 7,
+  "aqi": 33,
+  "pm25": 7.94,
+  "wind_mph": 6,
   "wind_dir": "S"
  },
  "pool": {
   "temp_f": 83.3,
-  "epoch": 1784682120
+  "epoch": 1784682840
  },
  "forecast": [
   {
    "name": "Tonight",
    "temp_f": 68,
    "is_day": false,
-   "precip_pct": 56,
-   "short": "Showers And Thunderstorms Likely then Chance Showers And Thunderstorms"
+   "precip_pct": 77,
+   "short": "Showers And Thunderstorms then Chance Showers And Thunderstorms"
   },
   {
    "name": "Wednesday",
@@ -35,7 +35,7 @@
   "today_in": 0.06
  },
  "indoor": {
-  "lr_temp_f": 69.9,
+  "lr_temp_f": 70.0,
   "target_f": 70.0,
   "hum_pct": 68,
   "dew_f": 57.3,
@@ -44,7 +44,7 @@
  },
  "hvac": {
   "cool_by": "gree",
-  "gree_mode": "dry",
+  "gree_mode": "cool",
   "gree_set_f": 70,
   "gree_fan": "low",
   "central_mode": "cool",
